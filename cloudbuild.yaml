@@ -10,4 +10,5 @@ steps:
           echo "Commit ID: $COMMIT_SHA"
 
 options:
-  logging: CLOUD_LOGGING_ONLY
+  #logging: CLOUD_LOGGING_ONLY
+  logging: NONE
