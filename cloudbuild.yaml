@@ -4,13 +4,12 @@ steps:
     args:
       - '-c'
       - |
-          echo "Cloud Build Triggered Successfully!"
-          echo "Repository: $REPO_NAME"
-          echo "Branch: $BRANCH_NAME"
-          echo "Commit ID: $COMMIT_SHA"
+          echo "=== Starting Python hello.py"
+          python hello.py
+          echo "=== Finished hello.py"
 
-#options:
-  #logging: CLOUD_LOGGING_ONLY
+options:
+  logging: CLOUD_LOGGING_ONLY
   #logging: NONE
 
 logsBucket: gs://gcp-devops-course-bucket-new
